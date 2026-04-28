@@ -482,9 +482,8 @@
       <button class="dot active" data-index="0" aria-label="Go to intro"></button>
       <button class="dot" data-index="1" aria-label="Go to balloons"></button>
       <button class="dot" data-index="2" aria-label="Go to cake"></button>
-      <button class="dot" data-index="3" aria-label="Go to memories"></button>
-      <button class="dot" data-index="4" aria-label="Go to letter"></button>
-      <button class="dot" data-index="5" aria-label="Go to finale"></button>
+      <button class="dot" data-index="3" aria-label="Go to letter"></button>
+      <button class="dot" data-index="4" aria-label="Go to finale"></button>
     </div>
 
     <div class="nav-arrows">
@@ -499,7 +498,7 @@
           <div class="panel" style="position:relative; overflow:hidden;">
             <div class="magic-ring" aria-hidden="true"></div>
             <div class="eyebrow">🌟 A magical birthday story</div>
-            <h1>Hey Lakshmi Prasanna…</h1>
+            <h1>Hey Prasanna…</h1>
             <p class="lead">I made this little world for you — full of glow, wishes, memories, and love wrapped into one unforgettable birthday experience.</p>
 
             <div class="countdown-wrap">
@@ -573,37 +572,6 @@
             <div class="panel">
               <h3>Simple and smooth</h3>
               <p>This cake interaction is designed to work cleanly on phone and desktop without needing any extra libraries. It keeps the page elegant while still feeling playful.</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="screen" data-label="Memories">
-          <div class="panel">
-            <div class="eyebrow">📸 Memory timeline</div>
-            <h2>Small moments, forever feelings</h2>
-            <p>This section is for the milestones that belong only to both of you. Replace them with your real memories to make Lakshmi Prasanna feel every word.</p>
-            <div class="timeline">
-              <article class="memory reveal">
-                <div class="memory-photo">💬</div>
-                <div>
-                  <h3>The first beautiful conversation</h3>
-                  <p>That moment when talking to each other no longer felt ordinary and started feeling like home.</p>
-                </div>
-              </article>
-              <article class="memory reveal">
-                <div class="memory-photo">📷</div>
-                <div>
-                  <h3>A favorite photo together</h3>
-                  <p>Add a real picture here later or write one short line that instantly brings a memory rushing back.</p>
-                </div>
-              </article>
-              <article class="memory reveal">
-                <div class="memory-photo">🌙</div>
-                <div>
-                  <h3>A night worth remembering</h3>
-                  <p>Maybe it was a call, a walk, a laugh, or silence that somehow said everything.</p>
-                </div>
-              </article>
             </div>
           </div>
         </section>
@@ -728,7 +696,7 @@
 
     prevScreen.addEventListener('click', prev);
     nextScreen.addEventListener('click', next);
-    goFinale.addEventListener('click', () => goToScreen(5));
+    goFinale.addEventListener('click', () => goToScreen(4));
     startStory.addEventListener('click', () => goToScreen(1));
     toCake.addEventListener('click', () => goToScreen(2));
     dots.forEach(dot => dot.addEventListener('click', () => goToScreen(Number(dot.dataset.index))));
